@@ -5,6 +5,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: Build for Raspberry Pi 2/3/4 32 bit
       uses: actions-rs/cargo@v1
       with:
